@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Firefox
+Exec=firefox-a
+Icon=/opt/firefox/browser/chrome/icons/default/default128.png
+Type=Application
+Categories=Network

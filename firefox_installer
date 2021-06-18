@@ -13,8 +13,9 @@ git clone https://github.com/Can202/FirefoxInstallerLinux
 echo "media cloned!"
 
 sudo cp -R firefox/ /opt/
-sudo cp FirefoxInstallerLinux/media/firefoxa /usr/bin/
-sudo cp FirefoxInstallerLinux/media/firefoxa.desktop /usr/share/applications/
+chmod a+x FirefoxInstallerLinux/media/firefox-can
+sudo cp FirefoxInstallerLinux/media/firefox-can /usr/bin/
+sudo cp FirefoxInstallerLinux/media/firefox-can.desktop /usr/share/applications/
 echo "firefox installed"
 
 cd ..

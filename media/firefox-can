@@ -1,2 +1,11 @@
 #!/bin/sh
+
+if [$1 = "--delete" ]
+then
+    sudo rm -R /opt/firefox/
+    sudo rm /usr/bin/firefox-can/
+    sudo rm /usr/share/applications/firefox-can.desktop
+fi
+
 /opt/firefox/firefox
+

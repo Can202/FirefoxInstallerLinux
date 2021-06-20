@@ -18,7 +18,19 @@ Firefox Installer to have automatic updates
 - tar
 
 # Commands
---help        see available commands
---remove      remove firefox
-do [command]  send a firefox command
-do --help     see firefox commands
+
+- --help
+
+see available commands
+
+- --remove
+
+remove firefox
+
+- do [command]
+
+send a firefox command
+
+- do --help
+
+see firefox commands

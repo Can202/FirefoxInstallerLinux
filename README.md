@@ -9,11 +9,11 @@ Firefox Installer to have automatic updates
 
 - 64-bits
 ~~~
-cd /tmp/ && wget https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.1/firefox_installer_64 && chmod a+x firefox_installer_64 && ./firefox_installer_64 && rm firefox_installer_64
+cd /tmp/ && rm firefox_installer_64 && wget https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.1/firefox_installer_64 && chmod a+x firefox_installer_64 && ./firefox_installer_64 && rm firefox_installer_64
 ~~~
 - 32-bits
 ~~~
-cd /tmp/ && wget https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.1/firefox_installer_32 && chmod a+x firefox_installer_32 && ./firefox_installer_32 && rm firefox_installer_32
+cd /tmp/ && rm firefox_installer_32 && wget https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.1/firefox_installer_32 && chmod a+x firefox_installer_32 && ./firefox_installer_32 && rm firefox_installer_32
 ~~~
 
 

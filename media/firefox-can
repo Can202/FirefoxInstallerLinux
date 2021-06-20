@@ -13,7 +13,7 @@ fi
 if [ $1 = "--help" ]
 then
     clear
-    echo "COMANDS"
+    echo "Commands"
     echo "--help     		see available commands"
     echo "--remove		remove firefox"
     echo "do [command]		send a firefox command"

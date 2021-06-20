@@ -3,6 +3,16 @@ Firefox Installer to have automatic updates
 
 # Instructions
 
+## Option 2
+
+1. Download the installer:
+- [64-bits](https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.1/firefox_installer_64)
+- [32-bits](https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.1/firefox_installer_32)
+
+2. Make it executable
+
+3. Run in terminal
+
 ## Option 1
 
 1. run this in terminal as root (or with an admin user)
@@ -16,17 +26,16 @@ sudo ls && cd /tmp/ && wget https://github.com/Can202/FirefoxInstallerLinux/rele
 sudo ls && cd /tmp/ && wget https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.1/firefox_installer_32 && chmod a+x firefox_installer_32 && ./firefox_installer_32 && rm firefox_installer_32
 ~~~
 
+2. if the command failed, do this and try again the first step:
 
-
-## Option 2
-
-1. Download the installer:
-- [64-bits](https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.1/firefox_installer_64)
-- [32-bits](https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.1/firefox_installer_32)
-
-2. Make it executable
-
-3. Run in terminal
+- 64-bits
+~~~
+sudo rm /tmp/firefox_installer_64
+~~~
+- 32-bits
+~~~
+sudo rm /tmp/firefox_installer_32
+~~~
 
 # Dependencies
 

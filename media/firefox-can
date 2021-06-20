@@ -10,6 +10,17 @@ then
     exit
 fi
 
+if [ $1 = "--help" ]
+then
+    clear
+    echo "COMANDS"
+    echo "--help     		see available commands"
+    echo "--remove		remove firefox"
+    echo "do [command]		send a firefox command"
+    echo "do --help		see firefox commands"
+    exit
+fi
+
 if [ $1 = "do" ]
 then
     /opt/firefox/firefox $2

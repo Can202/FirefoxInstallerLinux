@@ -6,8 +6,8 @@ Firefox Installer to have automatic updates
 ## Option 1
 
 1. Download the installer:
-- [64-bits](https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.1/firefox_installer_64)
-- [32-bits](https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.1/firefox_installer_32)
+- [64-bits](https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.2/firefox_installer_64)
+- [32-bits](https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.2/firefox_installer_32)
 
 2. Make it executable
 
@@ -19,11 +19,11 @@ Firefox Installer to have automatic updates
 
 - 64-bits
 ~~~
-sudo ls && cd /tmp/ && wget https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.1/firefox_installer_64 && chmod a+x firefox_installer_64 && ./firefox_installer_64 && rm firefox_installer_64
+sudo ls && cd /tmp/ && wget https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.2/firefox_installer_64 && chmod a+x firefox_installer_64 && ./firefox_installer_64 && rm firefox_installer_64
 ~~~
 - 32-bits
 ~~~
-sudo ls && cd /tmp/ && wget https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.1/firefox_installer_32 && chmod a+x firefox_installer_32 && ./firefox_installer_32 && rm firefox_installer_32
+sudo ls && cd /tmp/ && wget https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.2/firefox_installer_32 && chmod a+x firefox_installer_32 && ./firefox_installer_32 && rm firefox_installer_32
 ~~~
 
 2. If the command failed, do this and try the first step again:

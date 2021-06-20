@@ -11,7 +11,7 @@ tar -xjvf firefox-89.0.1.tar.bz2
 echo "Firefox binary downloaded and unzipped"
 
 git clone https://github.com/Can202/FirefoxInstallerLinux
-#git checkout v0.2
+git checkout v0.2
 echo "media cloned!"
 
 sudo cp -R firefox/ /opt/

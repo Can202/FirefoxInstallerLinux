@@ -16,3 +16,21 @@ Firefox Installer to have automatic updates
 - wget
 - git
 - tar
+
+# Commands
+
+- --help
+
+see available commands
+
+- --remove
+
+remove firefox
+
+- do [command]
+
+send a firefox command
+
+- do --help
+
+see firefox commands

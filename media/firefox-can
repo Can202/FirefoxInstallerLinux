@@ -10,5 +10,11 @@ then
     exit
 fi
 
-/opt/firefox/firefox
+if [ $1 = "do" ]
+then
+    /opt/firefox/firefox $2
+else
+    /opt/firefox/firefox
+fi
+
 

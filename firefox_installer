@@ -1,6 +1,7 @@
 #!/bin/sh
 
 cd /tmp/
+sudo rm -R FirefoxInstalerCache/
 mkdir FirefoxInstalerCache/
 cd FirefoxInstalerCache/
 echo "Cache folder created"
@@ -18,7 +19,7 @@ sudo cp FirefoxInstallerLinux/media/firefox-can /usr/bin/
 sudo cp FirefoxInstallerLinux/media/firefox-can.desktop /usr/share/applications/
 echo "firefox installed"
 
-cd ..
+cd ../
 sudo rm -R FirefoxInstalerCache/
-echo "chache removed!
+echo "chache removed!"
 

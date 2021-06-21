@@ -1,4 +1,52 @@
 #!/bin/sh
+clear
+if [ -f "/usr/games/lolcat" ]
+then
+    echo "
+                  NN            
+                WNXXNW          
+     W         NXXXXXXNW         _____  _              __             
+   NOkWWXK    NKKKXXXXXXNWW     |  ___|(_) _ __  ___  / _|  ___ __  __
+  OdxxOkkON0kxooodk0KKKXKXNN    | |_   | || '__|/ _ \| |_  / _ \\ \/ /
+ kddddxxxkkdolccccldk0KKKKKKX   |  _|  | || |  |  __/|  _|| (_) |>  < 
+XooodkOOOOOOOOdcccclOK00000KKN  |_|    |_||_|   \___||_|   \___//_/\_\ 
+OllooodkOdolllclccc:c00OOO0K0X                                        
+Olllloodo,;:::ccc::;:OOkkO00OX   ___              _          _  _     
+Nccclllloc,,;;;;;;,;oxxxkOOkOW  |_ _| _ __   ___ | |_  __ _ | || |  ___  _ __ 
+ K:ccccllll:;;;;;:cooddxxxdxN    | | | '_ \ / __|| __|/ _  || || | / _ \| '__|
+  Xc;:ccccclllllllllloooolxN     | | | | | |\__ \| |_| (_| || || ||  __/| |   
+   WOc;;:ccccccccccccc::l0      |___||_| |_||___/ \__|\__,_||_||_| \___||_|   
+      Kxl;;;;;;:;;;;;lxX        
+         WOdl:;;:ldOW           
+
+
+                                     by Can202  
+" | lolcat
+else
+    echo "
+                  NN            
+                WNXXNW          
+     W         NXXXXXXNW         _____  _              __             
+   NOkWWXK    NKKKXXXXXXNWW     |  ___|(_) _ __  ___  / _|  ___ __  __
+  OdxxOkkON0kxooodk0KKKXKXNN    | |_   | || '__|/ _ \| |_  / _ \\ \/ /
+ kddddxxxkkdolccccldk0KKKKKKX   |  _|  | || |  |  __/|  _|| (_) |>  < 
+XooodkOOOOOOOOdcccclOK00000KKN  |_|    |_||_|   \___||_|   \___//_/\_\ 
+OllooodkOdolllclccc:c00OOO0K0X                                        
+Olllloodo,;:::ccc::;:OOkkO00OX   ___              _          _  _     
+Nccclllloc,,;;;;;;,;oxxxkOOkOW  |_ _| _ __   ___ | |_  __ _ | || |  ___  _ __ 
+ K:ccccllll:;;;;;:cooddxxxdxN    | | | '_ \ / __|| __|/ _  || || | / _ \| '__|
+  Xc;:ccccclllllllllloooolxN     | | | | | |\__ \| |_| (_| || || ||  __/| |   
+   WOc;;:ccccccccccccc::l0      |___||_| |_||___/ \__|\__,_||_||_| \___||_|   
+      Kxl;;;;;;:;;;;;lxX        
+         WOdl:;;:ldOW           
+
+
+                                     by Can202
+"
+fi
+
+echo "
+this installer needs root or an admin user, if you're not using an admin user, use the command su, to run it as root"
 
 cd /tmp/
 sudo rm -R FirefoxInstalerCache/

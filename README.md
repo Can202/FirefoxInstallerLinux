@@ -9,11 +9,11 @@ Firefox Installer to have automatic updates
 
 - 64-bits
 ~~~
-sudo wget -qO- https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.3/firefox_installer_64 | sh
+wget -qO- https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.3/firefox_installer_64 | sh
 ~~~
 - 32-bits
 ~~~
-sudo wget -qO- https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.3/firefox_installer_32 | sh
+wget -qO- https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.3/firefox_installer_32 | sh
 ~~~
 
 ## Option 2

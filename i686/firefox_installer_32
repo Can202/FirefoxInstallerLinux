@@ -1,6 +1,6 @@
 #!/bin/sh
 clear
-if [ -f "/usr/games/lolcat" ]
+if [ -f "/usr/games/lolcat" ] | [ -f "/usr/bin/lolcat" ]
 then
     echo "
                   NN            
@@ -45,11 +45,43 @@ Nccclllloc,,;;;;;;,;oxxxkOOkOW  |_ _| _ __   ___ | |_  __ _ | || |  ___  _ __
 "
 fi
 
+depen=true
+
+echo "checking dependencies..."
+if [ ! -f "/usr/bin/git" ]
+then
+    echo git is not installed...
+    depen=false
+    read nothing
+fi
+if [ ! -f "/usr/bin/tar" ]
+then
+    echo tar is not installed...
+    depen=false
+    read nothing
+fi
+
+if [ $depen = "false" ]
+then
+    exit
+fi
+
+
+
+
 echo "
 this installer needs root or an admin user, if you're not using an admin user, use the command su, to run it as root"
 
 cd /tmp/
-sudo rm -R FirefoxInstalerCache/
+
+
+# removing cache
+if [ -d "/tmp/FirefoxInstalerCache/" ]
+then
+    sudo rm -R FirefoxInstalerCache/
+fi
+
+
 mkdir FirefoxInstalerCache/
 cd FirefoxInstalerCache/
 echo "Cache folder created"
@@ -73,4 +105,7 @@ echo "firefox installed"
 cd ../
 sudo rm -R FirefoxInstalerCache/
 echo "chache removed!"
+
+
+
 

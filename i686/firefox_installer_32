@@ -57,6 +57,12 @@ then
     depen=false
     read nothing
 fi
+if [ ! -f "/usr/bin/wget" ]
+then
+    echo wget is not installed...
+    depen=false
+    read nothing
+fi
 if [ ! -f "/usr/bin/tar" ]
 then
     echo tar is not installed...

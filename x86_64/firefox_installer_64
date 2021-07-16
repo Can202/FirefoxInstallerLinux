@@ -103,9 +103,11 @@ echo "media cloned!"
 sed -i 's/userh/'$USER'/g' FirefoxInstallerLinux/media/firefox-can.desktop
 sed -i 's/userh/'$USER'/g' FirefoxInstallerLinux/media/firefox-can
 
+
 cp -R firefox/ /home/$USER/.firefox-can
 chmod a+x FirefoxInstallerLinux/media/firefox-can
 cp FirefoxInstallerLinux/media/firefox-can.desktop /home/$USER/.local/share/applications/
+cp FirefoxInstallerLinux/media/firefox-can /home/$USER/.firefox-can/
 echo "firefox installed"
 
 cd ../

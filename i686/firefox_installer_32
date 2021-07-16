@@ -96,16 +96,18 @@ echo "Firefox binary downloaded and unzipped"
 
 git clone https://github.com/Can202/FirefoxInstallerLinux
 cd FirefoxInstallerLinux/
-git checkout v0.5
+#git checkout v0.5
 cd ../
 echo "media cloned!"
 
 sed -i 's/userh/'$USER'/g' FirefoxInstallerLinux/media/firefox-can.desktop
 sed -i 's/userh/'$USER'/g' FirefoxInstallerLinux/media/firefox-can
 
+
 cp -R firefox/ /home/$USER/.firefox-can
 chmod a+x FirefoxInstallerLinux/media/firefox-can
 cp FirefoxInstallerLinux/media/firefox-can.desktop /home/$USER/.local/share/applications/
+cp FirefoxInstallerLinux/media/firefox-can /home/$USER/.firefox-can/
 echo "firefox installed"
 
 cd ../

@@ -96,7 +96,7 @@ echo "Firefox binary downloaded and unzipped"
 
 git clone https://github.com/Can202/FirefoxInstallerLinux
 cd FirefoxInstallerLinux/
-#git checkout v0.5
+git checkout v0.5
 cd ../
 echo "media cloned!"
 

@@ -5,15 +5,15 @@ Firefox Installer to have automatic updates
 
 ## Option 1
 
-1. run this in terminal as root (or with an admin user)
+1. run this in terminal (NOT ROOT)
 
 - 64-bits
 ~~~
-wget -qO- https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.4/firefox_installer_64 | sh
+wget -qO- https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.5/firefox_installer_64 | sh
 ~~~
 - 32-bits
 ~~~
-wget -qO- https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.4/firefox_installer_32 | sh
+wget -qO- https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.5/firefox_installer_32 | sh
 ~~~
 
 # Dependencies

@@ -3,9 +3,7 @@ Firefox Installer to have automatic updates
 
 # Instructions
 
-## Option 1
-
-1. run this in terminal (NOT ROOT)
+#### Run this in terminal (NOT ROOT)
 
 - 64-bits
 ~~~

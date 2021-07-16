@@ -1,6 +1,7 @@
 #!/bin/sh
 
 VERSIONFIREFOX="89.0.2"
+ARCHT="x86_64"
 
 clear
 if [ -f "/usr/games/lolcat" ] | [ -f "/usr/bin/lolcat" ]
@@ -95,7 +96,7 @@ mkdir FirefoxInstalerCache/
 cd FirefoxInstalerCache/
 echo "Cache folder created"
 
-wget https://download-installer.cdn.mozilla.net/pub/firefox/releases/$VERSIONFIREFOX/linux-x86_64/en-US/firefox-$VERSIONFIREFOX.tar.bz2
+wget https://download-installer.cdn.mozilla.net/pub/firefox/releases/$VERSIONFIREFOX/linux-$ARCHT/en-US/firefox-$VERSIONFIREFOX.tar.bz2
 tar -xjvf firefox-$VERSIONFIREFOX.tar.bz2
 echo "Firefox binary downloaded and unzipped"
 

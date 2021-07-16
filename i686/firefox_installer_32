@@ -1,6 +1,7 @@
 #!/bin/sh
 
 VERSIONFIREFOX="89.0.2"
+ARCHT="i686"
 
 clear
 if [ -f "/usr/games/lolcat" ] | [ -f "/usr/bin/lolcat" ]
@@ -75,19 +76,13 @@ then
     exit
 fi
 
-
-
-
-echo "
-this installer needs root or an admin user, if you're not using an admin user, use the command su, to run it as root"
-
 cd /tmp/
 
 
 # removing cache
 if [ -d "/tmp/FirefoxInstalerCache/" ]
 then
-    sudo rm -R FirefoxInstalerCache/
+    rm -R FirefoxInstalerCache/
 fi
 
 
@@ -95,26 +90,25 @@ mkdir FirefoxInstalerCache/
 cd FirefoxInstalerCache/
 echo "Cache folder created"
 
-wget https://download-installer.cdn.mozilla.net/pub/firefox/releases/$VERSIONFIREFOX/linux-i686/en-US/firefox-$VERSIONFIREFOX.tar.bz2
+wget https://download-installer.cdn.mozilla.net/pub/firefox/releases/$VERSIONFIREFOX/linux-$ARCHT/en-US/firefox-$VERSIONFIREFOX.tar.bz2
 tar -xjvf firefox-$VERSIONFIREFOX.tar.bz2
 echo "Firefox binary downloaded and unzipped"
 
 git clone https://github.com/Can202/FirefoxInstallerLinux
 cd FirefoxInstallerLinux/
-git checkout v0.4
+git checkout v0.5
 cd ../
 echo "media cloned!"
 
-sudo cp -R firefox/ /opt/
+sed -i 's/userh/'$USER'/g' FirefoxInstallerLinux/media/firefox-can.desktop
+sed -i 's/userh/'$USER'/g' FirefoxInstallerLinux/media/firefox-can
+
+cp -R firefox/ /home/$USER/.firefox-can
 chmod a+x FirefoxInstallerLinux/media/firefox-can
-sudo cp FirefoxInstallerLinux/media/firefox-can /usr/bin/
-sudo cp FirefoxInstallerLinux/media/firefox-can.desktop /usr/share/applications/
+cp FirefoxInstallerLinux/media/firefox-can.desktop /home/$USER/.local/share/applications/
 echo "firefox installed"
 
 cd ../
-sudo rm -R FirefoxInstalerCache/
+rm -R FirefoxInstalerCache/
 echo "chache removed!"
-
-
-
 

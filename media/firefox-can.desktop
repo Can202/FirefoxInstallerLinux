@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Firefox
-Exec=firefox-can
-Icon=/opt/firefox/browser/chrome/icons/default/default128.png
+Exec=/home/userh/.firefox-can/firefox-can
+Icon=/home/userh/.firefox-can/browser/chrome/icons/default/default128.png
 Type=Application
 Categories=Network

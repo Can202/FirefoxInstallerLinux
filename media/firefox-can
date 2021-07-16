@@ -4,9 +4,12 @@ if [ $1 = "--remove" ]
 then
     echo "are you sure that you want to remove Firefox? (enter to continue)"
     read nothing
-    sudo rm -R /opt/firefox/
-    sudo rm /usr/bin/firefox-can
-    sudo rm /usr/share/applications/firefox-can.desktop
+    if [ $nothing = "" ]
+    then
+        rm -R /home/userh/.firefox-can/
+        rm /home/userh/.local/share/applications/firefox-can.desktop
+        echo "removed"
+    fi
     exit
 fi
 
@@ -23,9 +26,9 @@ fi
 
 if [ $1 = "do" ]
 then
-    /opt/firefox/firefox $2 $3 $4 $5 $6 $7 $8 $9
+    /home/userh/.firefox-can/firefox $2 $3 $4 $5 $6 $7 $8 $9
 else
-    /opt/firefox/firefox
+    /home/userh/.firefox-can/firefox
 fi
 
 

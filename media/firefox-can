@@ -4,12 +4,9 @@ if [ $1 = "--remove" ]
 then
     echo "are you sure that you want to remove Firefox? (enter to continue)"
     read nothing
-    if [ $nothing == "" ]
-    then
-        rm -R /home/userh/.firefox-can/
-        rm /home/userh/.local/share/applications/firefox-can.desktop
-        echo "removed"
-    fi
+    rm -R /home/userh/.firefox-can/
+    rm /home/userh/.local/share/applications/firefox-can.desktop
+    echo "removed"
     exit
 fi
 

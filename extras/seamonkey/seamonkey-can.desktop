@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Seamonkey
+Exec=/home/userh/.seamonkey-can/seamonkey
+Icon=/home/userh/.seamonkey-can/browser/chrome/icons/default/default128.png
+Type=Application
+Categories=Network

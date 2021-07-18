@@ -1,0 +1,77 @@
+#!/bin/sh
+
+VERSIONFIREFOX="2.53.8"
+ARCHT="x86_64"
+
+#https://archive.mozilla.org/pub/seamonkey/releases/2.53.8/linux-x86_64/en-US/seamonkey-2.53.8.en-US.linux-x86_64.tar.bz2
+
+
+clear
+echo "Seamonkey Installer"
+echo "by Can202"
+
+depen=true
+
+echo "checking dependencies..."
+if [ ! -f "/usr/bin/git" ]
+then
+    echo git is not installed...
+    depen=false
+    read nothing
+fi
+if [ ! -f "/usr/bin/wget" ]
+then
+    echo wget is not installed...
+    depen=false
+    read nothing
+fi
+if [ ! -f "/usr/bin/tar" ]
+then
+    echo tar is not installed...
+    depen=false
+    read nothing
+fi
+
+if [ $depen = "false" ]
+then
+    exit
+fi
+
+cd /tmp/
+
+
+# removing cache
+if [ -d "/tmp/FirefoxInstalerCache/" ]
+then
+    rm -R FirefoxInstalerCache/
+fi
+
+
+mkdir FirefoxInstalerCache/
+cd FirefoxInstalerCache/
+echo "Cache folder created"
+
+wget https://archive.mozilla.org/pub/seamonkey/releases/$VERSIONFIREFOX/linux-$ARCHT/en-US/seamonkey-$VERSIONFIREFOX.en-US.linux-$ARCHT.tar.bz2
+tar -xjvf seamonkey-$VERSIONFIREFOX.en-US.linux-$ARCHT.tar.bz2
+echo "Seamonkey binary downloaded and unzipped"
+
+git clone https://github.com/Can202/FirefoxInstallerLinux
+cd FirefoxInstallerLinux/
+#git checkout v0.5
+cd ../
+echo "media cloned!"
+
+sed -i 's/userh/'$USER'/g' FirefoxInstallerLinux/extras/seamonkey/seamonkey-can.desktop
+sed -i 's/userh/'$USER'/g' FirefoxInstallerLinux/extras/seamonkey/seamonkey-can
+
+
+cp -R seamonkey/ /home/$USER/.seamonkey-can
+chmod a+x FirefoxInstallerLinux/extras/seamonkey/seamonkey-can
+cp FirefoxInstallerLinux/extras/seamonkey/seamonkey-can.desktop /home/$USER/.local/share/applications/
+cp FirefoxInstallerLinux/extras/seamonkey/seamonkey-can /home/$USER/.firefox-can/
+echo "firefox installed"
+
+cd ../
+rm -R FirefoxInstalerCache/
+echo "chache removed!"
+

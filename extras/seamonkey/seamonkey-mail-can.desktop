@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Seamonkey Mail
+Exec=/home/userh/.seamonkey-can/seamonkey -mail
+Icon=/home/userh/.seamonkey-can/chrome/icons/default/messengerWindow48.png
+Type=Application
+Categories=Network

@@ -6,6 +6,9 @@ then
     read nothing
     rm -R /home/userh/.seamonkey-can/
     rm /home/userh/.local/share/applications/seamonkey-can.desktop
+    rm /home/userh/.local/share/applications/seamonkey-addressbook-can.desktop
+    rm /home/userh/.local/share/applications/seamonkey-mail-can.desktop
+    
     echo "removed"
     exit
 fi

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Seamonkey Address Book
+Exec=/home/userh/.seamonkey-can/seamonkey -addressbook
+Icon=/home/userh/.seamonkey-can/chrome/icons/default/addressbookWindow48.png
+Type=Application
+Categories=Network

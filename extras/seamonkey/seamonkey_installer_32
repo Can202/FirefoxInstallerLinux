@@ -3,7 +3,7 @@
 #based on v0.5
 
 VERSIONFIREFOX="2.53.8"
-ARCHT="x86_64"
+ARCHT="i686"
 
 clear
 echo "Seamonkey Installer"

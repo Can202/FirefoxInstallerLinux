@@ -1,6 +1,6 @@
 #!/bin/sh
 
-VERSIONFIREFOX="89.0.2"
+VERSIONFIREFOX="90.0.2"
 ARCHT="i686"
 
 clear
@@ -96,7 +96,7 @@ echo "Firefox binary downloaded and unzipped"
 
 git clone https://github.com/Can202/FirefoxInstallerLinux
 cd FirefoxInstallerLinux/
-git checkout v0.6
+git checkout v0.7
 cd ../
 echo "media cloned!"
 

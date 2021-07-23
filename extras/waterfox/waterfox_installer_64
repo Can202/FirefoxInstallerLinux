@@ -1,0 +1,78 @@
+#!/bin/sh
+
+#based on v0.5
+
+VERSIONFIREFOX="G3.2.4.1"
+ARCHT="x86_64"
+
+clear
+echo "Waterfox Installer"
+echo "by Can202"
+
+depen=true
+
+echo "checking dependencies..."
+if [ ! -f "/usr/bin/git" ]
+then
+    echo git is not installed...
+    depen=false
+    read nothing
+fi
+if [ ! -f "/usr/bin/wget" ]
+then
+    echo wget is not installed...
+    depen=false
+    read nothing
+fi
+if [ ! -f "/usr/bin/tar" ]
+then
+    echo tar is not installed...
+    depen=false
+    read nothing
+fi
+
+if [ $depen = "false" ]
+then
+    exit
+fi
+
+cd /tmp/
+
+
+# removing cache
+if [ -d "/tmp/FirefoxInstalerCache/" ]
+then
+    rm -R FirefoxInstalerCache/
+fi
+
+
+mkdir FirefoxInstalerCache/
+cd FirefoxInstalerCache/
+echo "Cache folder created"
+
+wget https://cdn.waterfox.net/releases/linux64/installer/waterfox-$VERSIONFIREFOX.en-US.linux-$ARCHT.tar.bz2
+tar -xjvf waterfox-$VERSIONFIREFOX.en-US.linux-$ARCHT.tar.bz2
+echo "Waterfox binary downloaded and unzipped"
+
+git clone https://github.com/Can202/FirefoxInstallerLinux
+cd FirefoxInstallerLinux/
+#git checkout v0.7
+cd ../
+echo "media cloned!"
+
+sed -i 's/userh/'$USER'/g' FirefoxInstallerLinux/extras/waterfox/waterfox-can.desktop
+sed -i 's/userh/'$USER'/g' FirefoxInstallerLinux/extras/waterfox/waterfox-can
+
+
+cp -R waterfox/ /home/$USER/.waterfox-can
+chmod a+x FirefoxInstallerLinux/extras/waterfox/waterfox-can
+
+cp FirefoxInstallerLinux/extras/waterfox/waterfox-can.desktop /home/$USER/.local/share/applications/
+
+cp FirefoxInstallerLinux/extras/waterfox/waterfox-can /home/$USER/.waterfox-can/
+echo "waterfox installed"
+
+cd ../
+rm -R FirefoxInstalerCache/
+echo "chache removed!"
+

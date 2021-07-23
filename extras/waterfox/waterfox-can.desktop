@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Waterfox
+Exec=/home/userh/.waterfox-can/waterfox
+Icon=/home/userh/.waterfox-can/browser/chrome/icons/default/default128.png
+Type=Application
+Categories=Network

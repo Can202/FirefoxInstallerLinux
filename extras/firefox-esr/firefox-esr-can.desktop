@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Firefox ESR
+Exec=/home/userh/.firefox-esr-can/firefox
+Icon=/home/userh/.firefox-esr-can/browser/chrome/icons/default/default128.png
+Type=Application
+Categories=Network

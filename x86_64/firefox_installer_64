@@ -56,21 +56,17 @@ if [ ! -f "/usr/bin/git" ]
 then
     echo git is not installed...
     depen=false
-    read nothing
 fi
 if [ ! -f "/usr/bin/wget" ]
 then
     echo wget is not installed...
     depen=false
-    read nothing
 fi
 if [ ! -f "/usr/bin/tar" ]
 then
     echo tar is not installed...
     depen=false
-    read nothing
 fi
-
 if [ $depen = "false" ]
 then
     exit

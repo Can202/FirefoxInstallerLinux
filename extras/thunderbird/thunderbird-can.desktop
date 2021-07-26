@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Thunderbird
+Exec=/home/userh/.thunderbird-can/thunderbird
+Icon=/home/userh/.thunderbird-can/chrome/icons/default/default256.png
+Type=Application
+Categories=Network

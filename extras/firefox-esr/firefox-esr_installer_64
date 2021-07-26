@@ -64,7 +64,7 @@ sed -i 's/userh/'$USER'/g' FirefoxInstallerLinux/extras/firefox-esr/firefox-esr-
 sed -i 's/userh/'$USER'/g' FirefoxInstallerLinux/extras/firefox-esr/firefox-esr-can
 
 
-cp -R firefox-esr/ /home/$USER/.firefox-esr-can
+cp -R firefox/ /home/$USER/.firefox-esr-can
 chmod a+x FirefoxInstallerLinux/extras/firefox-esr/firefox-esr-can
 
 cp FirefoxInstallerLinux/extras/firefox-esr/firefox-esr-can.desktop /home/$USER/.local/share/applications/

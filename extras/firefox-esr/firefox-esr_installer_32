@@ -56,7 +56,7 @@ echo "Firefox ESR binary downloaded and unzipped"
 
 git clone https://github.com/Can202/FirefoxInstallerLinux
 cd FirefoxInstallerLinux/
-git checkout develop
+git checkout v0.8
 cd ../
 echo "media cloned!"
 

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Firefox Developer
+Exec=/home/userh/.firefox-developer-can/firefox
+Icon=/home/userh/.firefox-developer-can/browser/chrome/icons/default/default128.png
+Type=Application
+Categories=Network

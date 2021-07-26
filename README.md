@@ -3,8 +3,8 @@ Firefox Installer to have automatic updates
 
 - [Firefox](#Firefox)
 - [Thunderbird](#Thunderbird)
-- [Firefox ESR](#Firefox ESR)
-- [Firefox Developer](#Firefox Developer)
+- [Firefox ESR](#ESR)
+- [Firefox Developer](#Developer)
 - [SeaMonkey](#SeaMonkey)
 - [Waterfox](#Waterfox)
 
@@ -79,7 +79,7 @@ wget -qO- https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8
 wget -qO- https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/waterfox_installer_64 | sh
 ~~~
 
-# Firefox ESR
+# ESR
 
 #### Run this in terminal (NOT ROOT)
 
@@ -93,7 +93,7 @@ wget -qO- https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8
 ~~~
 
 
-# Firefox Developer
+# Developer
 
 #### Run this in terminal (NOT ROOT)
 

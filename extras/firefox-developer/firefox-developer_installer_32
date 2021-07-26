@@ -3,7 +3,7 @@
 #based on v0.5
 
 VERSIONFIREFOX="91.0b7"
-ARCHT="x86_64"
+ARCHT="i686"
 
 clear
 echo "Firefox Developer Installer"

@@ -2,11 +2,11 @@
 
 #based on v0.5
 
-VERSIONFIREFOX="91.0b7"
-ARCHT="x86_64"
+VERSIONFIREFOX="78.12.0esr"
+ARCHT="i686"
 
 clear
-echo "Firefox Developer Installer"
+echo "Firefox ESR Installer"
 echo "by Can202"
 
 depen=true
@@ -50,9 +50,9 @@ mkdir FirefoxInstalerCache/
 cd FirefoxInstalerCache/
 echo "Cache folder created"
 
-wget https://download-installer.cdn.mozilla.net/pub/devedition/releases/$VERSIONFIREFOX/linux-$ARCHT/en-US/firefox-$VERSIONFIREFOX.tar.bz2
+wget https://download-installer.cdn.mozilla.net/pub/firefox/releases/$VERSIONFIREFOX/linux-$ARCHT/en-US/firefox-$VERSIONFIREFOX.tar.bz2
 tar -xjvf firefox-$VERSIONFIREFOX.tar.bz2
-echo "Firefox Developer binary downloaded and unzipped"
+echo "Firefox ESR binary downloaded and unzipped"
 
 git clone https://github.com/Can202/FirefoxInstallerLinux
 cd FirefoxInstallerLinux/
@@ -60,17 +60,17 @@ git checkout develop
 cd ../
 echo "media cloned!"
 
-sed -i 's/userh/'$USER'/g' FirefoxInstallerLinux/extras/firefox-developer/firefox-developer-can.desktop
-sed -i 's/userh/'$USER'/g' FirefoxInstallerLinux/extras/firefox-developer/firefox-developer-can
+sed -i 's/userh/'$USER'/g' FirefoxInstallerLinux/extras/firefox-esr/firefox-esr-can.desktop
+sed -i 's/userh/'$USER'/g' FirefoxInstallerLinux/extras/firefox-esr/firefox-esr-can
 
 
-cp -R firefox/ /home/$USER/.firefox-developer-can
-chmod a+x FirefoxInstallerLinux/extras/firefox-developer/firefox-developer-can
+cp -R firefox/ /home/$USER/.firefox-esr-can
+chmod a+x FirefoxInstallerLinux/extras/firefox-esr/firefox-esr-can
 
-cp FirefoxInstallerLinux/extras/firefox-developer/firefox-developer-can.desktop /home/$USER/.local/share/applications/
+cp FirefoxInstallerLinux/extras/firefox-esr/firefox-esr-can.desktop /home/$USER/.local/share/applications/
 
-cp FirefoxInstallerLinux/extras/firefox-developer/firefox-developer-can /home/$USER/.firefox-developer-can/
-echo "Firefox Developer installed"
+cp FirefoxInstallerLinux/extras/firefox-esr/firefox-esr-can /home/$USER/.firefox-esr-can/
+echo "Firefox ESR installed"
 
 cd ../
 rm -R FirefoxInstalerCache/

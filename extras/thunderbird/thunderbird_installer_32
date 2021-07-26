@@ -1,0 +1,78 @@
+#!/bin/sh
+
+#based on v0.5
+
+VERSIONFIREFOX="78.12.0"
+ARCHT="i686"
+
+clear
+echo "Thunderbird Installer"
+echo "by Can202"
+
+depen=true
+
+echo "checking dependencies..."
+if [ ! -f "/usr/bin/git" ]
+then
+    echo git is not installed...
+    depen=false
+    read nothing
+fi
+if [ ! -f "/usr/bin/wget" ]
+then
+    echo wget is not installed...
+    depen=false
+    read nothing
+fi
+if [ ! -f "/usr/bin/tar" ]
+then
+    echo tar is not installed...
+    depen=false
+    read nothing
+fi
+
+if [ $depen = "false" ]
+then
+    exit
+fi
+
+cd /tmp/
+
+
+# removing cache
+if [ -d "/tmp/FirefoxInstalerCache/" ]
+then
+    rm -R FirefoxInstalerCache/
+fi
+
+
+mkdir FirefoxInstalerCache/
+cd FirefoxInstalerCache/
+echo "Cache folder created"
+
+wget https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/$VERSIONFIREFOX/linux-$ARCHT/en-US/thunderbird-$VERSIONFIREFOX.tar.bz2
+tar -xjvf thunderbird-$VERSIONFIREFOX.tar.bz2
+echo "Thunderbird binary downloaded and unzipped"
+
+git clone https://github.com/Can202/FirefoxInstallerLinux
+cd FirefoxInstallerLinux/
+git checkout develop
+cd ../
+echo "media cloned!"
+
+sed -i 's/userh/'$USER'/g' FirefoxInstallerLinux/extras/thunderbird/thunderbird-can.desktop
+sed -i 's/userh/'$USER'/g' FirefoxInstallerLinux/extras/thunderbird/thunderbird-can
+
+
+cp -R thunderbird/ /home/$USER/.thunderbird-can
+chmod a+x FirefoxInstallerLinux/extras/thunderbird/thunderbird-can
+
+cp FirefoxInstallerLinux/extras/thunderbird/thunderbird-can.desktop /home/$USER/.local/share/applications/
+
+cp FirefoxInstallerLinux/extras/thunderbird/thunderbird-can /home/$USER/.thunderbird-can/
+echo "Thunderbird installed"
+
+cd ../
+rm -R FirefoxInstalerCache/
+echo "chache removed!"
+

@@ -14,24 +14,6 @@ Firefox Installer to have automatic updates
 - git
 - tar
 
-## commands to use specific things with this apps
-
-- --help
-
-see available commands
-
-- --remove
-
-remove firefox
-
-- do [command]
-
-send a firefox command
-
-- do --help
-
-see firefox commands
-
 # Firefox
 
 #### Run this in terminal (NOT ROOT)
@@ -108,3 +90,20 @@ wget -qO- https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8
 
 
 
+## commands to use specific things with this apps
+
+- --help
+
+see available commands
+
+- --remove
+
+remove firefox
+
+- do [command]
+
+send a firefox command
+
+- do --help
+
+see firefox commands

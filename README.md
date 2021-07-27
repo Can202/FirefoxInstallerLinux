@@ -14,7 +14,7 @@ Firefox Installer to have automatic updates
 - git
 - tar
 
-# Commands
+## commands to use specific things with this apps
 
 - --help
 

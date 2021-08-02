@@ -10,7 +10,6 @@ Firefox Installer to have automatic updates
 
 # Dependencies
 
-- wget
 - git
 - tar
 - curl
@@ -21,11 +20,11 @@ Firefox Installer to have automatic updates
 
 - 64-bits
 ~~~
-wget -qO- https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/firefox_installer_64 | sh
+curl -L https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/firefox_installer_64 | sh
 ~~~
 - 32-bits
 ~~~
-wget -qO- https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/firefox_installer_32 | sh
+curl -L https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/firefox_installer_32 | sh
 ~~~
 
 # Thunderbird
@@ -34,11 +33,11 @@ wget -qO- https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8
 
 - 64-bits
 ~~~
-wget -qO- https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/thunderbird_installer_64 | sh
+curl -L https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/thunderbird_installer_64 | sh
 ~~~
 - 32-bits
 ~~~
-wget -qO- https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/thunderbird_installer_32 | sh
+curl -L https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/thunderbird_installer_32 | sh
 ~~~
 
 
@@ -47,11 +46,11 @@ wget -qO- https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8
 #### Run this in terminal (NOT ROOT)
 - 64-bits
 ~~~
-wget -qO- https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/seamonkey_installer_64 | sh
+curl -L https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/seamonkey_installer_64 | sh
 ~~~
 - 32-bits
 ~~~
-wget -qO- https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/seamonkey_installer_32 | sh
+curl -L https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/seamonkey_installer_32 | sh
 ~~~
 
 # Waterfox
@@ -59,7 +58,7 @@ wget -qO- https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8
 #### Run this in terminal (NOT ROOT)
 - 64-bits
 ~~~
-wget -qO- https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/waterfox_installer_64 | sh
+curl -L https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/waterfox_installer_64 | sh
 ~~~
 
 # ESR
@@ -68,11 +67,11 @@ wget -qO- https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8
 
 - 64-bits
 ~~~
-wget -qO- https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/firefox-esr_installer_64 | sh
+curl -L https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/firefox-esr_installer_64 | sh
 ~~~
 - 32-bits
 ~~~
-wget -qO- https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/firefox-esr_installer_32 | sh
+curl -L https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/firefox-esr_installer_32 | sh
 ~~~
 
 
@@ -82,11 +81,11 @@ wget -qO- https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8
 
 - 64-bits
 ~~~
-wget -qO- https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/firefox-developer_installer_64 | sh
+curl -L https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/firefox-developer_installer_64 | sh
 ~~~
 - 32-bits
 ~~~
-wget -qO- https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/firefox-developer_installer_32 | sh
+curl -L https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/firefox-developer_installer_32 | sh
 ~~~
 
 

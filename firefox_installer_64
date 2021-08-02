@@ -59,9 +59,9 @@ then
     depen=false
     read nothing
 fi
-if [ ! -f "/usr/bin/wget" ]
+if [ ! -f "/usr/bin/curl" ]
 then
-    echo wget is not installed...
+    echo curl is not installed...
     depen=false
     read nothing
 fi

@@ -50,7 +50,7 @@ mkdir FirefoxInstalerCache/
 cd FirefoxInstalerCache/
 echo "Cache folder created"
 
-wget https://download-installer.cdn.mozilla.net/pub/devedition/releases/$VERSIONFIREFOX/linux-$ARCHT/en-US/firefox-$VERSIONFIREFOX.tar.bz2
+curl -O https://download-installer.cdn.mozilla.net/pub/devedition/releases/$VERSIONFIREFOX/linux-$ARCHT/en-US/firefox-$VERSIONFIREFOX.tar.bz2
 tar -xjvf firefox-$VERSIONFIREFOX.tar.bz2
 echo "Firefox Developer binary downloaded and unzipped"
 

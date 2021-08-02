@@ -50,7 +50,7 @@ mkdir FirefoxInstalerCache/
 cd FirefoxInstalerCache/
 echo "Cache folder created"
 
-wget https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/$VERSIONFIREFOX/linux-$ARCHT/en-US/thunderbird-$VERSIONFIREFOX.tar.bz2
+curl -O https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/$VERSIONFIREFOX/linux-$ARCHT/en-US/thunderbird-$VERSIONFIREFOX.tar.bz2
 tar -xjvf thunderbird-$VERSIONFIREFOX.tar.bz2
 echo "Thunderbird binary downloaded and unzipped"
 

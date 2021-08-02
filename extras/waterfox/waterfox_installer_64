@@ -50,7 +50,7 @@ mkdir FirefoxInstalerCache/
 cd FirefoxInstalerCache/
 echo "Cache folder created"
 
-wget https://cdn.waterfox.net/releases/linux64/installer/waterfox-$VERSIONFIREFOX.en-US.linux-$ARCHT.tar.bz2
+curl -O https://cdn.waterfox.net/releases/linux64/installer/waterfox-$VERSIONFIREFOX.en-US.linux-$ARCHT.tar.bz2
 tar -xjvf waterfox-$VERSIONFIREFOX.en-US.linux-$ARCHT.tar.bz2
 echo "Waterfox binary downloaded and unzipped"
 

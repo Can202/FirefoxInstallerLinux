@@ -50,7 +50,7 @@ mkdir FirefoxInstalerCache/
 cd FirefoxInstalerCache/
 echo "Cache folder created"
 
-wget https://archive.mozilla.org/pub/seamonkey/releases/$VERSIONFIREFOX/linux-$ARCHT/en-US/seamonkey-$VERSIONFIREFOX.en-US.linux-$ARCHT.tar.bz2
+curl -O https://archive.mozilla.org/pub/seamonkey/releases/$VERSIONFIREFOX/linux-$ARCHT/en-US/seamonkey-$VERSIONFIREFOX.en-US.linux-$ARCHT.tar.bz2
 tar -xjvf seamonkey-$VERSIONFIREFOX.en-US.linux-$ARCHT.tar.bz2
 echo "Seamonkey binary downloaded and unzipped"
 

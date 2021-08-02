@@ -1,8 +1,8 @@
 #!/bin/sh
 
-#based on v0.5
+#based on v0.9
 
-VERSIONFIREFOX="G3.2.4.1"
+VERSIONFIREFOX=$(curl https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/develop/versions/waterfox)
 ARCHT="x86_64"
 
 clear

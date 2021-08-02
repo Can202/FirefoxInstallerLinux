@@ -1,8 +1,8 @@
 #!/bin/sh
 
-#based on v0.5
+#based on v0.9
 
-VERSIONFIREFOX="78.12.0esr"
+VERSIONFIREFOX=$(curl https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/develop/versions/firefox-esr)
 ARCHT="x86_64"
 
 clear

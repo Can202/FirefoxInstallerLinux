@@ -13,6 +13,7 @@ Firefox Installer to have automatic updates
 - wget
 - git
 - tar
+- curl
 
 # Firefox
 

@@ -20,11 +20,11 @@ Firefox Installer to have automatic updates
 
 - 64-bits
 ~~~
-curl -L https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/firefox_installer_64 | sh
+curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v0.9/firefox_installer_64 | sh
 ~~~
 - 32-bits
 ~~~
-curl -L https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/firefox_installer_32 | sh
+curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v0.9/firefox_installer_32 | sh
 ~~~
 
 # Thunderbird
@@ -33,11 +33,11 @@ curl -L https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/f
 
 - 64-bits
 ~~~
-curl -L https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/thunderbird_installer_64 | sh
+curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v0.9/thunderbird_installer_64 | sh
 ~~~
 - 32-bits
 ~~~
-curl -L https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/thunderbird_installer_32 | sh
+curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v0.9/thunderbird_installer_32 | sh
 ~~~
 
 
@@ -46,11 +46,11 @@ curl -L https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/t
 #### Run this in terminal (NOT ROOT)
 - 64-bits
 ~~~
-curl -L https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/seamonkey_installer_64 | sh
+curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v0.9/seamonkey_installer_64 | sh
 ~~~
 - 32-bits
 ~~~
-curl -L https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/seamonkey_installer_32 | sh
+curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v0.9/seamonkey_installer_32 | sh
 ~~~
 
 # Waterfox
@@ -58,7 +58,7 @@ curl -L https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/s
 #### Run this in terminal (NOT ROOT)
 - 64-bits
 ~~~
-curl -L https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/waterfox_installer_64 | sh
+curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v0.9/waterfox_installer_64 | sh
 ~~~
 
 # ESR
@@ -67,11 +67,11 @@ curl -L https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/w
 
 - 64-bits
 ~~~
-curl -L https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/firefox-esr_installer_64 | sh
+curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v0.9/firefox-esr_installer_64 | sh
 ~~~
 - 32-bits
 ~~~
-curl -L https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/firefox-esr_installer_32 | sh
+curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v0.9/firefox-esr_installer_32 | sh
 ~~~
 
 
@@ -81,11 +81,11 @@ curl -L https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/f
 
 - 64-bits
 ~~~
-curl -L https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/firefox-developer_installer_64 | sh
+curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v0.9/firefox-developer_installer_64 | sh
 ~~~
 - 32-bits
 ~~~
-curl -L https://github.com/Can202/FirefoxInstallerLinux/releases/download/v0.8/firefox-developer_installer_32 | sh
+curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v0.9/firefox-developer_installer_32 | sh
 ~~~
 
 

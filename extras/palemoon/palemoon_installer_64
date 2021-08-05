@@ -1,0 +1,79 @@
+#!/bin/sh
+
+#based on v0.9
+
+LINK=$(curl https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/develop/versions/palemoon)
+basename "$LINK"
+NAME="$(basename -- $LINK)"
+
+clear
+echo "Palemoon Installer"
+echo "by Can202"
+
+depen=true
+
+echo "checking dependencies..."
+if [ ! -f "/usr/bin/git" ]
+then
+    echo git is not installed...
+    depen=false
+    read nothing
+fi
+if [ ! -f "/usr/bin/curl" ]
+then
+    echo curl is not installed...
+    depen=false
+    read nothing
+fi
+if [ ! -f "/usr/bin/tar" ]
+then
+    echo tar is not installed...
+    depen=false
+    read nothing
+fi
+
+if [ $depen = "false" ]
+then
+    exit
+fi
+
+cd /tmp/
+
+
+# removing cache
+if [ -d "/tmp/FirefoxInstalerCache/" ]
+then
+    rm -R FirefoxInstalerCache/
+fi
+
+
+mkdir FirefoxInstalerCache/
+cd FirefoxInstalerCache/
+echo "Cache folder created"
+
+curl -O $LINK
+tar -xjvf $NAME
+echo "Palemoon binary downloaded and unzipped"
+
+git clone https://github.com/Can202/FirefoxInstallerLinux
+cd FirefoxInstallerLinux/
+git checkout develop
+cd ../
+echo "media cloned!"
+
+sed -i 's/userh/'$USER'/g' FirefoxInstallerLinux/extras/palemoon/palemoon-can.desktop
+sed -i 's/userh/'$USER'/g' FirefoxInstallerLinux/extras/palemoon/palemoon-can
+
+
+cp -R palemoon/ /home/$USER/.palemoon-can
+chmod a+x FirefoxInstallerLinux/extras/palemoon/palemoon-can
+
+cp FirefoxInstallerLinux/extras/palemoon/palemoon-can.desktop /home/$USER/.local/share/applications/
+
+cp FirefoxInstallerLinux/extras/palemoon/palemoon-can /home/$USER/.palemoon-can/
+echo "palemoon installed"
+
+cd ../
+rm -R FirefoxInstalerCache/
+echo "chache removed!"
+

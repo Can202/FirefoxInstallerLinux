@@ -7,6 +7,7 @@ Firefox Installer to have automatic updates
 - [Firefox Developer](#Developer)
 - [SeaMonkey](#SeaMonkey)
 - [Waterfox](#Waterfox)
+- [Palemoon](#Palemoon)
 
 # Dependencies
 
@@ -20,11 +21,11 @@ Firefox Installer to have automatic updates
 
 - 64-bits
 ~~~
-curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v0.9/firefox_installer_64 | sh
+curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v1.0/firefox_installer_64 | sh
 ~~~
 - 32-bits
 ~~~
-curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v0.9/firefox_installer_32 | sh
+curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v1.0/firefox_installer_32 | sh
 ~~~
 
 # Thunderbird
@@ -33,11 +34,11 @@ curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v0.9/fire
 
 - 64-bits
 ~~~
-curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v0.9/extras/thunderbird/thunderbird_installer_64 | sh
+curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v1.0/extras/thunderbird/thunderbird_installer_64 | sh
 ~~~
 - 32-bits
 ~~~
-curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v0.9/extras/thunderbird/thunderbird_installer_32 | sh
+curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v1.0/extras/thunderbird/thunderbird_installer_32 | sh
 ~~~
 
 
@@ -46,11 +47,11 @@ curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v0.9/extr
 #### Run this in terminal (NOT ROOT)
 - 64-bits
 ~~~
-curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v0.9/extras/seamonkey/seamonkey_installer_64 | sh
+curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v1.0/extras/seamonkey/seamonkey_installer_64 | sh
 ~~~
 - 32-bits
 ~~~
-curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v0.9/extras/seamonkey/seamonkey_installer_32 | sh
+curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v1.0/extras/seamonkey/seamonkey_installer_32 | sh
 ~~~
 
 # Waterfox
@@ -58,7 +59,15 @@ curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v0.9/extr
 #### Run this in terminal (NOT ROOT)
 - 64-bits
 ~~~
-curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v0.9/extras/waterfox/waterfox_installer_64 | sh
+curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v1.0/extras/waterfox/waterfox_installer_64 | sh
+~~~
+
+# Palemoon
+
+#### Run this in terminal (NOT ROOT)
+- 64-bits
+~~~
+curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v1.0/extras/palemoon/palemoon_installer_64 | sh
 ~~~
 
 # ESR
@@ -67,11 +76,11 @@ curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v0.9/extr
 
 - 64-bits
 ~~~
-curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v0.9/extras/firefox-esr/firefox-esr_installer_64 | sh
+curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v1.0/extras/firefox-esr/firefox-esr_installer_64 | sh
 ~~~
 - 32-bits
 ~~~
-curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v0.9/extras/firefox-esr/firefox-esr_installer_32 | sh
+curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v1.0/extras/firefox-esr/firefox-esr_installer_32 | sh
 ~~~
 
 
@@ -81,11 +90,11 @@ curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v0.9/extr
 
 - 64-bits
 ~~~
-curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v0.9/extras/firefox-developer/firefox-developer_installer_64 | sh
+curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v1.0/extras/firefox-developer/firefox-developer_installer_64 | sh
 ~~~
 - 32-bits
 ~~~
-curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v0.9/extras/firefox-developer/firefox-developer_installer_32 | sh
+curl -L https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/v1.0/extras/firefox-developer/firefox-developer_installer_32 | sh
 ~~~
 
 

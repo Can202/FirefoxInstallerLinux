@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#based on v0.9
+#based on v1.0
 
 VERSIONFIREFOX=$(curl https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/develop/versions/thunderbird)
 ARCHT="x86_64"
@@ -56,7 +56,7 @@ echo "Thunderbird binary downloaded and unzipped"
 
 git clone https://github.com/Can202/FirefoxInstallerLinux
 cd FirefoxInstallerLinux/
-git checkout v0.9
+git checkout v1.0
 cd ../
 echo "media cloned!"
 

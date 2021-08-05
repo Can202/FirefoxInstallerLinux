@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#based on v0.9
+#based on v1.0
 
 LINK=$(curl https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/develop/versions/palemoon)
 basename "$LINK"
@@ -56,7 +56,7 @@ echo "Palemoon binary downloaded and unzipped"
 
 git clone https://github.com/Can202/FirefoxInstallerLinux
 cd FirefoxInstallerLinux/
-git checkout develop
+git checkout v1.0
 cd ../
 echo "media cloned!"
 

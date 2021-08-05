@@ -5,7 +5,6 @@
 LINK=$(curl https://raw.githubusercontent.com/Can202/FirefoxInstallerLinux/develop/versions/palemoon)
 basename "$LINK"
 NAME="$(basename -- $LINK)"
-
 clear
 echo "Palemoon Installer"
 echo "by Can202"
@@ -52,7 +51,7 @@ cd FirefoxInstalerCache/
 echo "Cache folder created"
 
 curl -O $LINK
-tar -xjvf $NAME
+tar -xf $NAME
 echo "Palemoon binary downloaded and unzipped"
 
 git clone https://github.com/Can202/FirefoxInstallerLinux
